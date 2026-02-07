@@ -32,7 +32,7 @@ function moveNo() {
  
 /* YES Click */
 yesBtn.addEventListener("click", () => {
- 
+ document.getElementById("myPhoto").style.display = "block";
   // Hide both buttons smoothly
   const btnBox = document.querySelector(".btns");
  
