@@ -76,11 +76,16 @@ button{
   box-shadow:0 6px 15px rgba(0,0,0,0.15);
 }
 #myPhoto{
-  display:none;
-  margin-top:20px;
-  width:200px;
-  border-radius:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  display: none;
+ 
+  margin: 25px auto 0 auto;   /* centers horizontally */
+ 
+  width: 200px;
+  border-radius: 15px;
+ 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+ 
+  display: block;
 }
  
 #no:hover{
