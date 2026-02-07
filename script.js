@@ -32,7 +32,7 @@ function moveNo() {
  
 /* YES Click */
 yesBtn.addEventListener("click", () => {
- document.getElementById("myPhoto").style.display = "block";
+ 
   // Hide both buttons smoothly
   const btnBox = document.querySelector(".btns");
  
@@ -40,10 +40,21 @@ yesBtn.addEventListener("click", () => {
   btnBox.style.opacity = "0";
   btnBox.style.transform = "scale(0.8)";
  
-  // After fade-out, remove them
   setTimeout(() => {
     btnBox.style.display = "none";
   }, 600);
+ 
+  // SWITCH PHOTOS 👇
+  const photo1 = document.getElementById("photo1");
+  const photo2 = document.getElementById("photo2");
+ 
+  if(photo1 && photo2){
+    photo1.style.opacity = "0";
+    photo1.style.transform = "scale(0.9)";
+ 
+    photo2.style.opacity = "1";
+    photo2.style.transform = "scale(1)";
+  }
  
   // Show celebration text
   yay.style.display = "block";
@@ -119,6 +130,6 @@ animate();
 window.addEventListener("resize", ()=>{
  
   canvas.width = innerWidth;
-  canvas.height = innerHeight;
+  canvas.height = innerHeight;//hi
  
 });
